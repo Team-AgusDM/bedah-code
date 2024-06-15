@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <main
+      class="bg-gradient-to-r from-[#5A86E4] to-[#35D0DB] h-screen flex items-center justify-center"
+    >
+      <section
+        class="w-[80vw] bg-gray-300/40 rounded p-10 flex flex-col gap-3 text-white"
+      >
+        <div>
+          <img src="/assets/logo-home.png" class="w-[400px]" alt="logo-home" />
+        </div>
+        <h1 class="text-2xl font-bold">
+          PENGUMUMAN HASIL SELEKSI SNBT SNPMB 2024
+        </h1>
+        <h2 class="text-base">
+          Masukkan nomor peserta UTBK-SNBT dan tanggal lahir Anda.
+        </h2>
+        <div class="flex flex-col gap-2">
+          <label for="number-utbk">Nomor peserta UTBK-SNBT</label>
+          <input type="text" class="text-black p-2 rounded" />
+          <span class="text-xs"
+            >Masukkan 12-digit nomor peserta UTBK-SNBT Anda.
+          </span>
+        </div>
+        <div class="flex flex-col gap-2">
+          <label for="number-utbk">Tanggal lahir </label>
+          <div class="grid grid-cols-3 gap-3">
+            <div class="flex flex-col gap-2">
+              <input
+                placeholder="dd"
+                type="text"
+                class="text-black p-2 rounded"
+              />
+              <span class="text-xs">Tanggal (2 digit): 01-31 </span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <input
+                placeholder="mm"
+                type="text"
+                class="text-black p-2 rounded"
+              />
+              <span class="text-xs">Bulan (2 digit): 01-12 </span>
+            </div>
+            <div class="flex flex-col gap-2">
+              <input
+                placeholder="yyyy"
+                type="text"
+                class="text-black p-2 rounded"
+              />
+              <span class="text-xs">Tahun (4 digit) </span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <input type="checkbox" name="check" id="check" />
+          <label for="check" class="text-xs"
+            >Dengan ini saya menyatakan bahwa apabila di kemudian hari ditemukan
+            kecurangan yang saya lakukan dalam UTBK-SNBT 2024, maka status
+            penerimaan saya dibatalkan.</label
+          >
+        </div>
+        <div>
+          <button class="bg-blue-500 p-2 rounded">Lihat Hasil</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
